@@ -16,14 +16,7 @@ function increaseRankBy(n){
 
 function deepestChild(){
   //returns the most deeply nested child from div#grand-node
-  /*
-  let list= document.querySelectorAll(`div#grand-node`);
-  let temp=list;
-  if(Array.isArray(list)){
-    for(var i=0; i<list.length;i++){
-    //  children.push(list[i]);
-    }
-  }*/
+  
  let child= document.querySelector(`div#grand-node`); 
  while(child.querySelector(`div`)){
    child= child.querySelector(`div`);
